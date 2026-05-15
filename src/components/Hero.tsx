@@ -69,9 +69,9 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <h1 className="kinetic-text text-[15vw] md:text-[180px] text-black leading-[0.8] mb-8">
+            <h1 className="kinetic-text text-[20vw] md:text-[180px] text-black leading-[0.8] mb-8">
               <span className="block text-brand-neon-lime">BOBA</span>
-              <span className="block italic text-transparent stroke-text" style={{ WebkitTextStroke: '4px #BF00FF' }}>QUEEN</span>
+              <span className="block italic text-transparent stroke-text" style={{ WebkitTextStroke: '2px #BF00FF' }}>QUEEN</span>
             </h1>
 
             <div className="max-w-2xl">

@@ -7,7 +7,7 @@ const items = [
   {
     title: "Popping Magic",
     desc: "Explosive boba pearls in neon syrups.",
-    image: "https://www.dadcooksdinner.com/wp-content/uploads/2022/04/Instant-Pot-Boba-Tea-DSCF9377.jpg",
+    image: "/src/assets/images/bobaa.jpg",
     icon: <Zap size={20} strokeWidth={3} />,
     tag: "Signature",
     color: "bg-brand-neon-lime",
@@ -16,7 +16,7 @@ const items = [
   {
     title: "Purple Haze",
     desc: "Natural taro swirl with cream topping.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlH8arjEx7Mc-DV5lwuhhVRLZ6ZmXxegH4nQ&s",
+    image: "/src/assets/images/bobaa.jpg",
     icon: <Sparkles size={20} strokeWidth={3} />,
     tag: "Classic",
     color: "bg-brand-neon-purple",
@@ -34,7 +34,7 @@ const items = [
   {
     title: "Electric Ramen",
     desc: "Spicy miso broth with charred pork.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlH8arjEx7Mc-DV5lwuhhVRLZ6ZmXxegH4nQ&s",
+    image: "/src/assets/images/ramennew.jpg",
     icon: <Utensils size={20} strokeWidth={3} />,
     tag: "Fresh",
     color: "bg-brand-neon-pink",
@@ -103,7 +103,7 @@ export default function HighlightsSection() {
           className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-12"
         >
           <div className="max-w-4xl">
-            <h2 className="text-6xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8]">
+            <h2 className="text-5xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8]">
               BEYOND THE <br /> 
               <span className="text-brand-neon-purple italic">BUBBLE</span> <span className="text-brand-neon-lime italic">REVOLUTION</span>
             </h2>

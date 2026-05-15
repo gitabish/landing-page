@@ -68,7 +68,7 @@ export default function About() {
               <div className="inline-block px-4 py-1 bg-brand-neon-blue text-black brutal-border mb-6 -rotate-2">
                 <span className="font-display font-black uppercase text-sm tracking-widest">The Origin Story</span>
               </div>
-              <h1 className="text-7xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8] mb-8">
+              <h1 className="text-5xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8] mb-8">
                 BOBA <br /> 
                 <span className="text-brand-neon-lime italic">RECKONING</span>
               </h1>

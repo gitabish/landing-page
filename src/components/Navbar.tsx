@@ -26,11 +26,11 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-8 overflow-hidden"
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 md:py-8 overflow-hidden h-[80px] md:h-[106px]"
       >
         {/* Parallax Background Layer */}
         <motion.div 
-          className="absolute inset-0 bg-brand-dark -z-10 border-b-4 border-black shadow-brutal-dark"
+          className="absolute inset-0 bg-brand-dark -z-10 border-b-4 border-black shadow-brutal-dark h-[80px] md:h-[106px]"
         />
 
         <div className="flex items-center gap-16 relative z-10">

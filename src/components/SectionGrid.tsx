@@ -46,7 +46,7 @@ export default function SectionGrid() {
           <div className="bg-white text-black w-12 h-12 flex items-center justify-center brutal-border">
             <Utensils size={24} strokeWidth={3} />
           </div>
-          <h3 className="text-5xl font-display font-black uppercase tracking-tighter leading-none text-black">
+          <h3 className="text-4xl md:text-5xl font-display font-black uppercase tracking-tighter leading-none text-black">
             The Cyber <br /> Ramen Ritual.
           </h3>
           <p className="text-black font-bold text-lg leading-tight">
@@ -94,7 +94,7 @@ export default function SectionGrid() {
           <div className="bg-brand-neon-blue text-black w-12 h-12 flex items-center justify-center brutal-border">
             <Utensils size={24} strokeWidth={3} />
           </div>
-          <h3 className="text-5xl font-display font-black uppercase tracking-tighter leading-none text-black">
+          <h3 className="text-4xl md:text-5xl font-display font-black uppercase tracking-tighter leading-none text-black">
             Smashed <br /> Systems.
           </h3>
           <p className="text-black/60 font-bold text-xl leading-tight italic">

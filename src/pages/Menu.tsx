@@ -116,7 +116,7 @@ export default function Menu() {
           <div className="inline-block px-4 py-1 bg-brand-neon-lime text-black brutal-border mb-6 rotate-2">
             <span className="font-display font-black uppercase text-sm tracking-widest">The Catalog // 2026</span>
           </div>
-          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-black leading-none italic">
+          <h1 className="text-5xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-black leading-none italic">
             THE <span className="text-brand-neon-purple mt-4 block md:inline md:mt-0">MENU</span>
           </h1>
         </motion.div>
