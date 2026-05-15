@@ -1,77 +1,85 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Coffee, Leaf, Sparkles, Flame, Droplets, ChevronLeft, ChevronRight, Zap } from "lucide-react";
+import { Leaf, Sparkles, Flame, Droplets, ChevronLeft, ChevronRight, Zap, Heart, Utensils } from "lucide-react";
+import BobaBottle from "../components/BobaBottle";
 
 const menuItems = [
   {
-    category: "Hot Drinks",
-    icon: <Flame className="w-6 h-6" />,
+    category: "Signature Boba",
+    icon: <Droplets className="w-6 h-6" />,
     color: "bg-brand-neon-purple",
     shadow: "shadow-brutal-purple",
     items: [
-      { name: "Espresso", price: "₹60.00", desc: "Concentrated Coffee shots" },
-      { name: "Cappucino", price: "₹80.00", desc: "Perfect Blend of arabica and robusta beans" },
-      { name: "Irish Cappucino", price: "₹100.00", desc: "Flavoured Cappucino" },
-      { name: "Vanilla Cappucino", price: "₹100.00", desc: "Flavoured Cappucino" },
-      { name: "Cafe Mocha", price: "₹100.00", desc: "Chocolate flavoured cappucino" },
-      { name: "Hot chocolate", price: "₹80.00", desc: "Hot chocolate Milk" },
-      { name: "Cafe latte", price: "₹100.00", desc: "Coffee with less froth and more milk." },
-      { name: "Matcha Latte", price: "₹130.00", desc: "Best cermonial grade Japanese matcha with milk" },
-      { name: "Purpleccino", price: "₹120.00", desc: "Root based vegetation flavoured coffee with natural purple color", highlight: true },
+      { name: "Brown Sugar Pearl", price: "₹120.00", desc: "Warm brown sugar streaks and chewy pearls.", highlight: true },
+      { name: "Taro Royal", price: "₹130.00", desc: "Creamy root-based purple magic with cheese foam." },
+      { name: "Matcha Explosion", price: "₹140.00", desc: "Ceremonial grade matcha with honey boba." },
+      { name: "Oreo Mudslide", price: "₹130.00", desc: "Chocolate cookie crumble and milk tea base." },
+      { name: "Purple Haze", price: "₹125.00", desc: "Signature neon purple tea with popping pearls." },
     ]
   },
   {
-    category: "Ice Teas",
+    category: "Cyber Burgers",
+    icon: <Utensils className="w-6 h-6" />,
+    color: "bg-brand-neon-lime",
+    shadow: "shadow-brutal-lime",
+    items: [
+      { name: "Neon Classic", price: "₹250.00", desc: "Double patty, electric cheese, and secret sauce.", highlight: true },
+      { name: "The Glitch Burger", price: "₹280.00", desc: "Fried egg, caramelized onions, and spicy mayo." },
+      { name: "Boba Burger", price: "₹260.00", desc: "Trust us, it's a savory balsamic pearl topping." },
+    ]
+  },
+  {
+    category: "Signature Ramen",
+    icon: <Flame className="w-6 h-6" />,
+    color: "bg-brand-neon-pink",
+    shadow: "shadow-brutal-pink",
+    items: [
+      { name: "Electric Shoyu", price: "₹280.00", desc: "Soy base with charred pork and bamboo shoots.", highlight: true },
+      { name: "Spicy Neon Miso", price: "₹300.00", desc: "Rich chili-miso broth with corn and nori." },
+      { name: "Urban Tonkotsu", price: "₹320.00", desc: "18-hour bone broth for the ultimate soul fuel." },
+      { name: "Cyber Veggie", price: "₹260.00", desc: "Mushroom dashi with seasonal greens and tofu." },
+    ]
+  },
+  {
+    category: "Neon Refreshers",
     icon: <Leaf className="w-6 h-6" />,
     color: "bg-brand-neon-lime",
     shadow: "shadow-brutal-lime",
     items: [
-      { name: "Lemon iced tea", price: "₹100.00", desc: "Lemon flavoured ice tea" },
-      { name: "Peach iced tea", price: "₹100.00", desc: "Peach flavored ice tea" },
-      { name: "Strawberry Iced tea", price: "₹100.00", desc: "Strawberry flavoured ice tea" },
-      { name: "Cranberry Iced Tea", price: "₹100.00", desc: "Cranberry flavoured ice tea" },
-      { name: "Cucumber Iced tea", price: "₹100.00", desc: "Cucumber flavoured ice tea" },
-    ]
-  },
-  {
-    category: "Mojitos",
-    icon: <Droplets className="w-6 h-6" />,
-    color: "bg-brand-neon-blue",
-    shadow: "shadow-brutal-blue",
-    items: [
-      { name: "Classic mint mojito", price: "₹110.00", desc: "Classic Mojito" },
-      { name: "Cool blue mojito", price: "₹110.00", desc: "Blue curacao based mojito" },
-      { name: "Green apple mojito", price: "₹110.00", desc: "Green apple flavoured mojito" },
-      { name: "Raspberry mojito", price: "₹110.00", desc: "Raspberry flavoured mojito" },
+      { name: "Lemon Sparkler", price: "₹100.00", desc: "Lemon citrus with carbonated kick." },
+      { name: "Peach Rebel", price: "₹110.00", desc: "Peach flavored tea with lychee jelly." },
+      { name: "Strawberry Splash", price: "₹110.00", desc: "Fresh strawberries and green tea base." },
+      { name: "Cyan Lychee", price: "₹120.00", desc: "Electric blue lychee mojito minus the booze." },
     ]
   }
 ];
 
 const highlights = [
-  "Popular: Board Games",
-  "Popular: Cappuccino",
-  "Popular: Hot Chocolate",
-  "Natural Purple Coffee",
-  "Nitrogen Infusion",
-  "3-Day Fermented Sourdough",
-  "99% Caffeine",
+  "Popular: Brown Sugar Boba",
+  "Popular: Matcha Latte",
+  "Popular: Taro Swirl",
+  "Natural Purple Tea",
+  "Spicy Neon Ramen",
+  "Popping Pearls",
+  "99% Flavor",
   "Open Until Late",
   "Free High Speed WiFi",
   "Neo Brutalist Vibes Only"
 ];
 
 const galleryImages = [
-  { url: "/input_file_0.png", title: "Purpleccino Magic", tag: "Visuals" },
-  { url: "/input_file_1.png", title: "Latte Art", tag: "Atmosphere" },
-  { url: "/input_file_2.png", title: "Cafe Culture", tag: "Space" },
-  { url: "/input_file_3.png", title: "Fresh Brews", tag: "Brewing" }
+  { url: "https://images.unsplash.com/photo-1558857563-b371f31ca7fc?q=80&w=1200&auto=format&fit=crop", title: "Pearl Perfection", tag: "Signature" },
+  { url: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop", title: "Cyber Burger", tag: "Grill" },
+  { url: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1200&auto=format&fit=crop", title: "Electric Ramen", tag: "Broth" },
+  { url: "https://images.unsplash.com/photo-1594918731320-dd5fc605bc0c?q=80&w=1200&auto=format&fit=crop", title: "Taro Vibes", tag: "Atmosphere" },
+  { url: "https://images.unsplash.com/photo-1563200192-34900742f567?q=80&w=1200&auto=format&fit=crop", title: "Sugar Rush", tag: "Visuals" }
 ];
 
 export default function Menu() {
   const [filter, setFilter] = useState("All");
   const [activeImage, setActiveImage] = useState(0);
 
-  const categories = ["All", "Hot Drinks", "Ice Teas", "Mojitos"];
+  const categories = ["All", "Signature Boba", "Cyber Burgers", "Signature Ramen", "Neon Refreshers"];
 
   const nextImage = () => setActiveImage((prev) => (prev + 1) % galleryImages.length);
   const prevImage = () => setActiveImage((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
@@ -89,6 +97,16 @@ export default function Menu() {
     <div className="pt-40 pb-20 bg-brand-dark min-h-screen relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-screen bg-brand-neon-purple/5 -skew-x-12 -z-10"></div>
       
+      <BobaBottle 
+        className="absolute top-20 left-[10%] w-24 h-32 rotate-[-10deg] hidden lg:block" 
+        delay={0.2}
+      />
+
+      <BobaBottle 
+        className="absolute bottom-40 right-[15%] w-32 h-44 rotate-[15deg] hidden lg:block" 
+        delay={1.2}
+      />
+      
       <div className="container mx-auto px-6 md:px-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -98,7 +116,7 @@ export default function Menu() {
           <div className="inline-block px-4 py-1 bg-brand-neon-lime text-black brutal-border mb-6 rotate-2">
             <span className="font-display font-black uppercase text-sm tracking-widest">The Catalog // 2026</span>
           </div>
-          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-white leading-none italic">
+          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-black leading-none italic">
             THE <span className="text-brand-neon-purple mt-4 block md:inline md:mt-0">MENU</span>
           </h1>
         </motion.div>
@@ -181,7 +199,7 @@ export default function Menu() {
         <div className="mt-40 border-t-4 border-black pt-32">
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
             <div className="max-w-4xl">
-              <h2 className="text-6xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-white leading-[0.8]">
+              <h2 className="text-6xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8]">
                 VISUAL <br /> 
                 <span className="text-brand-neon-pink italic">VIBRATIONS</span>
               </h2>
@@ -192,7 +210,7 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className="relative brutal-border aspect-video overflow-hidden group shadow-brutal-white">
+          <div className="relative brutal-border aspect-video overflow-hidden group shadow-brutal-dark">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeImage}

@@ -13,9 +13,9 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-32">
           <div className="col-span-1 md:col-span-1">
-            <h2 className="text-5xl font-display font-black tracking-tighter mb-8 text-brand-neon-lime italic">EVE'S.</h2>
-            <p className="font-bold text-white/50 leading-tight max-w-xs">
-              THE ONLY COFFEE THAT MATTERS. HIGH-VOLTAGE BREWING FOR THE CREATIVE ELITE.
+            <h2 className="text-5xl font-display font-black tracking-tighter mb-8 text-brand-neon-lime italic">BOBA QUEEN.</h2>
+            <p className="font-bold text-black/50 leading-tight max-w-xs">
+              THE ULTIMATE BOBA REBELLION. ELECTRIC FLAVORS FOR THE DIGITAL GENERATION.
             </p>
           </div>
           
@@ -60,13 +60,13 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pt-12 border-t-4 border-black">
           <div className="flex gap-10">
-            <Instagram size={28} strokeWidth={3} className="text-white hover:text-brand-neon-pink cursor-pointer transition-all hover:scale-125" />
-            <Twitter size={28} strokeWidth={3} className="text-white hover:text-brand-neon-blue cursor-pointer transition-all hover:scale-125" />
-            <Facebook size={28} strokeWidth={3} className="text-white hover:text-brand-neon-purple cursor-pointer transition-all hover:scale-125" />
+            <Instagram size={28} strokeWidth={3} className="text-black hover:text-brand-neon-pink cursor-pointer transition-all hover:scale-125" />
+            <Twitter size={28} strokeWidth={3} className="text-black hover:text-brand-neon-blue cursor-pointer transition-all hover:scale-125" />
+            <Facebook size={28} strokeWidth={3} className="text-black hover:text-brand-neon-purple cursor-pointer transition-all hover:scale-125" />
           </div>
           
-          <p className="font-display font-black uppercase tracking-widest text-white/30 text-xs">
-            © 2026 Eve's Cafe. Built for the bold.
+          <p className="font-display font-black uppercase tracking-widest text-black/30 text-xs">
+            © 2026 Cafe Boba Queen. Built for the bold.
           </p>
           
           <div className="flex gap-8 font-black uppercase tracking-widest text-xs">

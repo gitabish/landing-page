@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import { Fingerprint, Target, Zap } from "lucide-react";
 
 const interiorImages = [
-  "/input_file_0.png",
-  "/input_file_1.png",
-  "/input_file_2.png",
-  "/input_file_3.png",
+  "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop", // Bakery/Interior
+  "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop", // Burger
+  "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1200&auto=format&fit=crop", // Ramen
+  "https://images.unsplash.com/photo-1594918731320-dd5fc605bc0c?q=80&w=1200&auto=format&fit=crop", // Taro
 ];
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              className="relative aspect-square brutal-border bg-brand-neon-purple shadow-brutal-white overflow-hidden group"
+              className="relative aspect-square brutal-border bg-brand-neon-purple shadow-brutal-dark overflow-hidden group"
             >
               <AnimatePresence mode="wait">
                 <motion.img 
@@ -53,7 +53,7 @@ export default function About() {
                   <button 
                     key={idx}
                     onClick={() => setCurrentIdx(idx)}
-                    className={`w-4 h-4 brutal-border transition-all duration-300 ${idx === currentIdx ? "bg-brand-neon-lime scale-125" : "bg-white"}`}
+                    className={`w-4 h-4 brutal-border transition-all duration-300 ${idx === currentIdx ? "bg-brand-neon-lime scale-125" : "bg-black"}`}
                   />
                 ))}
               </div>
@@ -68,8 +68,8 @@ export default function About() {
               <div className="inline-block px-4 py-1 bg-brand-neon-blue text-black brutal-border mb-6 -rotate-2">
                 <span className="font-display font-black uppercase text-sm tracking-widest">The Origin Story</span>
               </div>
-              <h1 className="text-7xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-white leading-[0.8] mb-8">
-                EVE'S <br /> 
+              <h1 className="text-7xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8] mb-8">
+                BOBA <br /> 
                 <span className="text-brand-neon-lime italic">RECKONING</span>
               </h1>
             </motion.div>
@@ -78,29 +78,29 @@ export default function About() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="space-y-8 font-bold text-xl text-white/70 leading-tight"
+              className="space-y-8 font-bold text-xl text-black/70 leading-tight"
             >
               <p className="border-l-8 border-brand-neon-purple pl-6 italic">
-                EVE'S CAFE WASN'T BORN. IT WAS ENGINEERED. WE STRIPPED AWAY THE BORING AND BUILT A SYSTEM FOR THE CREATIVE REBELS.
+                CAFE BOBA QUEEN WASN'T BORN. IT WAS ENGINEERED. WE STRIPPED AWAY THE BORING AND BUILT A SYSTEM FOR THE BOBA REBELS.
               </p>
               <p>
-                WE BELIEVE THE ENVIRONMENT CONTROLS THE OUTPUT. THAT'S WHY WE BUILT A SPACE THAT VIBRATES AT THE FREQUENCY OF INNOVATION. NO COFFEE SHOP PLAYS THIS LOUD.
+                WE BELIEVE THE ENVIRONMENT CONTROLS THE OUTPUT. THAT'S WHY WE BUILT A SPACE THAT VIBRATES AT THE FREQUENCY OF INNOVATION. NO BOBA BAR PLAYS THIS LOUD.
               </p>
               
               <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="brutal-card bg-brand-neon-lime p-8 text-black rotate-1">
+                <div className="brutal-card bg-brand-neon-lime p-8 text-black rotate-1 shadow-brutal-dark">
                   <div className="bg-black text-white w-10 h-10 flex items-center justify-center brutal-border mb-4">
                     <Fingerprint size={20} strokeWidth={3} />
                   </div>
                   <h4 className="font-display font-black uppercase text-lg mb-2 italic underline">Identity</h4>
-                  <p className="text-xs uppercase font-black">99% RAW EMOTION. 1% CAFFEINE STAIN.</p>
+                  <p className="text-xs uppercase font-black">99% RAW EMOTION. 1% TEA STAIN.</p>
                 </div>
-                <div className="brutal-card bg-brand-neon-purple p-8 text-white -rotate-2">
+                <div className="brutal-card bg-brand-neon-purple p-8 text-black -rotate-2 shadow-brutal-dark">
                   <div className="bg-white text-black w-10 h-10 flex items-center justify-center brutal-border mb-4">
                     <Target size={20} strokeWidth={3} />
                   </div>
                   <h4 className="font-display font-black uppercase text-lg mb-2 italic underline">Target</h4>
-                  <p className="text-xs uppercase font-black">THE MISFITS. THE BUILDERS. THE BOLD.</p>
+                  <p className="text-xs uppercase font-black font-black">THE MISFITS. THE BUILDERS. THE BOLD.</p>
                 </div>
               </div>
               

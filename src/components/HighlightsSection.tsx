@@ -1,41 +1,51 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import { Sparkles, Gamepad2, Coffee, Utensils, Star } from "lucide-react";
+import { Sparkles, Zap, Utensils, Star } from "lucide-react";
+import BobaBottle from "./BobaBottle";
 
 const items = [
   {
-    title: "Game On",
-    desc: "Tabletop strategy for the bold.",
-    image: "https://images.unsplash.com/photo-1544650030-3c9baf62427a?q=75&w=800&auto=format&fit=crop",
-    icon: <Gamepad2 size={20} strokeWidth={3} />,
-    tag: "Social",
+    title: "Popping Magic",
+    desc: "Explosive boba pearls in neon syrups.",
+    image: "/src/assets/images/regenerated_image_1778833488053.jpg",
+    icon: <Zap size={20} strokeWidth={3} />,
+    tag: "Signature",
     color: "bg-brand-neon-lime",
     shadow: "shadow-brutal-lime"
   },
   {
-    title: "Purple Rain",
-    desc: "Natural root-based magic brew.",
-    image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=75&w=800&auto=format&fit=crop",
+    title: "Purple Haze",
+    desc: "Natural taro swirl with cream topping.",
+    image: "/src/assets/images/regenerated_image_1778833489682.jpg",
     icon: <Sparkles size={20} strokeWidth={3} />,
-    tag: "Bestseller",
+    tag: "Classic",
     color: "bg-brand-neon-purple",
     shadow: "shadow-brutal-purple"
   },
   {
-    title: "Wild Dough",
-    desc: "3-day fermented sourdough treats.",
-    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=75&w=800&auto=format&fit=crop",
+    title: "Cyber Burger",
+    desc: "Pepperoni-style supreme burger with neon sauce.",
+    image: "https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=800&auto=format&fit=crop",
+    icon: <Utensils size={20} strokeWidth={3} />,
+    tag: "New",
+    color: "bg-brand-neon-blue",
+    shadow: "shadow-brutal-blue"
+  },
+  {
+    title: "Electric Ramen",
+    desc: "Spicy miso broth with charred pork.",
+    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop",
     icon: <Utensils size={20} strokeWidth={3} />,
     tag: "Fresh",
     color: "bg-brand-neon-pink",
     shadow: "shadow-brutal-pink"
   },
   {
-    title: "Nitro Bomb",
-    desc: "Nitrogen infused stout-like coffee.",
-    image: "https://images.unsplash.com/photo-1592318763199-c9852e5a3edb?q=75&w=800&auto=format&fit=crop",
-    icon: <Coffee size={20} strokeWidth={3} />,
-    tag: "Tech",
+    title: "Neon Matcha",
+    desc: "Ceremonial grade with honey boba.",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop",
+    icon: <Sparkles size={20} strokeWidth={3} />,
+    tag: "Electric",
     color: "bg-brand-neon-blue",
     shadow: "shadow-brutal-blue"
   }
@@ -60,10 +70,10 @@ function HighlightCard({ item }: { item: typeof items[0] }) {
         <div className={`inline-flex items-center gap-2 ${item.color} text-black px-3 py-1 brutal-border mb-4 rotate-1`}>
           {item.icon} <span className="font-display font-black uppercase text-xs">{item.tag}</span>
         </div>
-        <h3 className="text-3xl font-display font-black uppercase tracking-tighter text-white mb-2 italic">
+        <h3 className="text-3xl font-display font-black uppercase tracking-tighter text-black mb-2 italic">
           {item.title}
         </h3>
-        <p className="font-bold text-white/50 leading-tight">
+        <p className="font-bold text-black/50 leading-tight">
           {item.desc}
         </p>
       </div>
@@ -93,14 +103,17 @@ export default function HighlightsSection() {
           className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-12"
         >
           <div className="max-w-4xl">
-            <h2 className="text-6xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-white leading-[0.8]">
+            <h2 className="text-6xl md:text-[8vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8]">
               BEYOND THE <br /> 
-              <span className="text-brand-neon-purple italic">BREW</span> <span className="text-brand-neon-lime italic">REVOLUTION</span>
+              <span className="text-brand-neon-purple italic">BUBBLE</span> <span className="text-brand-neon-lime italic">REVOLUTION</span>
             </h2>
           </div>
-          <div className="max-w-sm">
-            <p className="text-xl font-bold text-white/60 mb-8 border-l-4 border-brand-neon-blue pl-6">
-              WE'RE NOT JUST SERVING COFFEE. WE'RE BUILDING A SYSTEM FOR THE CREATIVE REBELS.
+          <div className="relative max-w-sm">
+            <BobaBottle 
+              className="absolute -top-20 -right-20 w-32 h-40 z-10 hidden md:block rotate-12" 
+            />
+            <p className="text-xl font-bold text-black/60 mb-8 border-l-4 border-brand-neon-blue pl-6 italic">
+              WE'RE NOT JUST SERVING TEA. WE'RE BUILDING A SYSTEM FOR THE BOBA REBELS.
             </p>
             <button className="btn-brutal btn-brutal-purple w-full">Join the Mission</button>
           </div>

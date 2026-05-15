@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Utensils, Music, Users, Camera, Zap } from "lucide-react";
+import BobaBottle from "../components/BobaBottle";
 
 const services = [
   {
@@ -7,7 +8,7 @@ const services = [
     icon: <Utensils className="w-10 h-10" />,
     desc: "BESPOKE SEASONAL MENUS FOR CORPORATE GALLERIES AND PRIVATE EVENTS.",
     color: "bg-brand-neon-purple",
-    shadow: "shadow-brutal-white"
+    shadow: "shadow-brutal-dark"
   },
   {
     title: "Acoustic Sessions",
@@ -46,9 +47,15 @@ export default function Service() {
           <div className="inline-block px-4 py-1 bg-brand-neon-blue text-black brutal-border mb-6 -rotate-2">
             <span className="font-display font-black uppercase text-sm tracking-widest">Utility System // v2.0</span>
           </div>
-          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-white leading-[0.8]">
-            THE <br /> <span className="text-brand-neon-purple italic underline">UTILITIES</span>
-          </h1>
+          <div className="relative">
+             <BobaBottle 
+               className="absolute -top-32 right-0 w-32 h-44 rotate-[15deg] hidden lg:block z-20" 
+               delay={0.4}
+             />
+             <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-black leading-[0.8]">
+               THE <br /> <span className="text-brand-neon-purple italic underline">UTILITIES</span>
+             </h1>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

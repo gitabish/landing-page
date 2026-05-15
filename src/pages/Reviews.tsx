@@ -5,7 +5,7 @@ const reviews = [
   {
     name: "Julian Vane",
     role: "Architect",
-    text: "THE ARCHITECTURAL PRECISION OF THE BREW HERE IS MATCHED ONLY BY THE INCREDIBLE ATMOSPHERE. A TRUE SANCTUARY FOR DESIGN REBELS.",
+    text: "THE ARCHITECTURAL PRECISION OF THE BROTH HERE IS MATCHED ONLY BY THE INCREDIBLE ATMOSPHERE. A TRUE SANCTUARY FOR DESIGN REBELS.",
     stars: 5,
     color: "bg-brand-neon-lime",
     shadow: "shadow-brutal-purple"
@@ -13,7 +13,7 @@ const reviews = [
   {
     name: "Elena Rossi",
     role: "Critic",
-    text: "EVE’S CAFE HAS REDEFINED THE MORNING RITUAL. THE PURPLECCINO IS A MASTERSTROKE IN FLAVOR SYSTEMS.",
+    text: "CAFE BOBA QUEEN HAS REDEFINED THE URBAN RITUAL. THE POPPING PEARLS ARE A MASTERSTROKE IN FLAVOR SYSTEMS.",
     stars: 5,
     color: "bg-brand-neon-purple",
     shadow: "shadow-brutal-blue"
@@ -44,7 +44,7 @@ export default function Reviews() {
           <div className="inline-block px-4 py-1 bg-brand-neon-pink text-white brutal-border mb-6 rotate-1">
             <span className="font-display font-black uppercase text-sm tracking-widest">Digital Transmissions</span>
           </div>
-          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-white leading-none">
+          <h1 className="text-7xl md:text-[10vw] font-display font-black uppercase tracking-tighter text-black leading-none">
             GUEST <br /> <span className="text-brand-neon-lime underline italic">STORIES</span>
           </h1>
         </motion.div>
@@ -88,7 +88,7 @@ export default function Reviews() {
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
-          className="mt-40 p-12 md:p-24 brutal-border bg-white text-center relative overflow-hidden shadow-brutal-lime"
+          className="mt-40 p-12 md:p-24 brutal-border bg-white text-center relative overflow-hidden shadow-brutal-dark"
         >
            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-neon-lime brutal-border rotate-45 flex items-center justify-center">
               <Plus size={48} className="text-black rotate-45" strokeWidth={3} />

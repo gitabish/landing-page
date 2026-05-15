@@ -6,25 +6,25 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
   
-  --color-brand-dark: #050505;
+  --color-brand-dark: #FDFDFD;
   --color-brand-neon-lime: #CCFF00;
   --color-brand-neon-purple: #BF00FF;
   --color-brand-neon-pink: #FF007F;
   --color-brand-neon-blue: #00E5FF;
   --color-brand-neon-orange: #FF5E00;
-  --color-brand-gray: #1A1A1A;
+  --color-brand-gray: #FFFFFF;
   
   --shadow-brutal-lime: 4px 4px 0px 0px #CCFF00;
   --shadow-brutal-purple: 4px 4px 0px 0px #BF00FF;
   --shadow-brutal-pink: 4px 4px 0px 0px #FF007F;
   --shadow-brutal-blue: 4px 4px 0px 0px #00E5FF;
   --shadow-brutal-dark: 4px 4px 0px 0px #000000;
-  --shadow-brutal-white: 4px 4px 0px 0px #FFFFFF;
+  --shadow-brutal-white: 4px 4px 0px 0px #E5E5E5;
 }
 
 @layer base {
   body {
-    @apply font-sans bg-brand-dark text-white;
+    @apply font-sans bg-brand-dark text-black;
     overflow-x: hidden;
   }
 }
