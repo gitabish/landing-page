@@ -7,7 +7,7 @@ const items = [
   {
     title: "Popping Magic",
     desc: "Explosive boba pearls in neon syrups.",
-    image: "/src/assets/images/regenerated_image_1778833488053.jpg",
+    image: "/src/assets/images/bobaa.jpg",
     icon: <Zap size={20} strokeWidth={3} />,
     tag: "Signature",
     color: "bg-brand-neon-lime",
@@ -16,7 +16,7 @@ const items = [
   {
     title: "Purple Haze",
     desc: "Natural taro swirl with cream topping.",
-    image: "/src/assets/images/regenerated_image_1778833489682.jpg",
+    image: "/src/assets/images/ramennew.jpg",
     icon: <Sparkles size={20} strokeWidth={3} />,
     tag: "Classic",
     color: "bg-brand-neon-purple",
@@ -34,7 +34,7 @@ const items = [
   {
     title: "Electric Ramen",
     desc: "Spicy miso broth with charred pork.",
-    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop",
+    image: "/src/assets/images/ramennew.jpg",
     icon: <Utensils size={20} strokeWidth={3} />,
     tag: "Fresh",
     color: "bg-brand-neon-pink",
