@@ -5,8 +5,8 @@ import { Fingerprint, Target, Zap } from "lucide-react";
 const interiorImages = [
   "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop", // Bakery/Interior
   "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop", // Burger
-  "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1200&auto=format&fit=crop", // Ramen
-  "https://images.unsplash.com/photo-1594918731320-dd5fc605bc0c?q=80&w=1200&auto=format&fit=crop", // Taro
+  "/images/ramennew.jpg", // Ramen
+  "/images/bobaa.jpg", // Taro/Boba
 ];
 
 export default function About() {

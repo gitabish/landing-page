@@ -68,10 +68,10 @@ const highlights = [
 ];
 
 const galleryImages = [
-  { url: "https://images.unsplash.com/photo-1558857563-b371f31ca7fc?q=80&w=1200&auto=format&fit=crop", title: "Pearl Perfection", tag: "Signature" },
-  { url: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop", title: "Cyber Burger", tag: "Grill" },
-  { url: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1200&auto=format&fit=crop", title: "Electric Ramen", tag: "Broth" },
-  { url: "https://images.unsplash.com/photo-1594918731320-dd5fc605bc0c?q=80&w=1200&auto=format&fit=crop", title: "Taro Vibes", tag: "Atmosphere" },
+    { url: "/images/bobaa.jpg", title: "Pearl Perfection", tag: "Signature" },
+    { url: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop", title: "Cyber Burger", tag: "Grill" },
+    { url: "/images/ramennew.jpg", title: "Electric Ramen", tag: "Broth" },
+    { url: "/images/bobaa.jpg", title: "Taro Vibes", tag: "Atmosphere" },
   { url: "https://images.unsplash.com/photo-1563200192-34900742f567?q=80&w=1200&auto=format&fit=crop", title: "Sugar Rush", tag: "Visuals" }
 ];
 

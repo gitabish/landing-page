@@ -64,7 +64,7 @@ export default function SectionGrid() {
         
         <div className="relative group brutal-border overflow-hidden bg-brand-neon-lime">
           <img 
-            src="/src/assets/images/ramennew.jpg" 
+            src="/images/ramennew.jpg" 
             alt="Signature Ramen"
             className="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0"
             referrerPolicy="no-referrer"
