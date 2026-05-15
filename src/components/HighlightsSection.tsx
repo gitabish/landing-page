@@ -16,7 +16,7 @@ const items = [
   {
     title: "Purple Haze",
     desc: "Natural taro swirl with cream topping.",
-    image: "/src/assets/images/ramennew.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlH8arjEx7Mc-DV5lwuhhVRLZ6ZmXxegH4nQ&s",
     icon: <Sparkles size={20} strokeWidth={3} />,
     tag: "Classic",
     color: "bg-brand-neon-purple",
@@ -34,7 +34,7 @@ const items = [
   {
     title: "Electric Ramen",
     desc: "Spicy miso broth with charred pork.",
-    image: "/src/assets/images/ramennew.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlH8arjEx7Mc-DV5lwuhhVRLZ6ZmXxegH4nQ&s",
     icon: <Utensils size={20} strokeWidth={3} />,
     tag: "Fresh",
     color: "bg-brand-neon-pink",
