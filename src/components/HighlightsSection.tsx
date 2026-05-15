@@ -7,7 +7,7 @@ const items = [
   {
     title: "Popping Magic",
     desc: "Explosive boba pearls in neon syrups.",
-    image: "/src/assets/images/bobaa.jpg",
+    image: "https://www.dadcooksdinner.com/wp-content/uploads/2022/04/Instant-Pot-Boba-Tea-DSCF9377.jpg",
     icon: <Zap size={20} strokeWidth={3} />,
     tag: "Signature",
     color: "bg-brand-neon-lime",
